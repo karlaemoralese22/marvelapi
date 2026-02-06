@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+    background-color: #E1E1E1;
+}
+
+.row {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-comic {
+    max-width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+input{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button{
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: black;
+  }
+  
+  #comicResults {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; 
+  }
+
+  .comic {
+    flex: 0 0 calc(5% - 10px); 
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .comic img {
+    max-width: 200px; 
+    border-radius: 10px;
+    margin-right: 20px; 
+  }
+  
+  .comic h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .comic p {
+    margin-bottom: 0;
+    text-align: center;
+  }

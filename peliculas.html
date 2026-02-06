@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylespeliculas.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.18.0/js/md5.min.js"></script>
+    <title>Peliculas</title>
+</head>
+
+<body>
+    <nav class="navbar bg-dark text-white navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-danger" href="index.html"><strong>MARVEL</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="peliculas.html">Peliculas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="personajes.html">Personajes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comics.html">Comics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="assets/avenger_animacion/avengers.html">Vengadores</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="img-inicio">
+        <div class="img-inicio-izquierda">
+            <img src="assets/images/cielo-3d-espacio-abstracto-estrellas-nebulosa_1048-8320.jpg" alt="" class="img-borde">
+        </div>
+        <div class="img-inicio-centro">
+            <img src="assets/images/guardianes de la galaxia.jpg" alt="" class="img-centro">
+        </div>
+        <div class="img-inicio-derecha">
+            <img src="assets/images/cielo-3d-espacio-abstracto-estrellas-nebulosa_1048-8320.jpg" alt="" class="img-borde">
+        </div>
+    </div>
+
+    <div class="contenedor-cuerpo">
+        <div class="titulo-principal-pelicula">
+            <h1>Películas</h1>
+        </div>
+        <div>
+            <p class="titulo-seccion">Últimos Lanzamientos</p>
+            <div class="contenedor-principal-peliculas">
+                <div class="contenedor-peliculas">
+                    <ul class="lista-peliculas">
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/deadpool-and-wolverine" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/deadpoolandwolverine_lob_crd_02.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Deadpool & Wolverine <br>JUL 26, 2024</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/the-marvels" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/themarvels_lob_crd_05.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">The Marvels <br>2023</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/guardians-of-the-galaxy-volume-3" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/guardiansofthegalaxyvolume3_lob_crd_03.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Guardians of the Galaxy vol.3 <br>2023</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/ant-man-and-the-wasp-quantumania" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/antmanandthewaspquantumania_lob_crd_03.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Ant-Man & The Wasp: Quantumania<br>2023</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/black-panther-wakanda-forever" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/blackpantherwakandaforever_lob_crd_06.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Black Panther: Wakanda Forever<br>2022</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/thor-love-and-thunder" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/thorloveandthunder_lob_crd_04.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Thor: Love & Thunder<br>2022</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p class="titulo-seccion">The Avengers</p>
+            <div class="contenedor-principal-peliculas">
+                <div class="contenedor-peliculas">
+                    <ul class="lista-peliculas">
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/the-avengers" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/theavengers_lob_crd_03.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">The Avengers<br>2012</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/avengers-age-of-ultron" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/avengersageofultron_lob_crd_03.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Avengers: Age of Ultron<br>2015</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/avengers-infinity-war" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/avengersinfinitywar_lob_crd_02_1.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Avengers: Infinity War<br>2018</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/avengers-endgame" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/avengersendgame_lob_crd_05_2.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Avengers: End Game<br>2019</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/avengers-kang-dynasty" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/avengersthekangdynasty_lob_crd_01.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Avengers: The Kang Dinasty<br>May 1, 2026</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/avengers-secret-wars" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/avengerssecretwars_lob_crd_01.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Avengers: Secrets Wars<br>May 7, 2027</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p class="titulo-seccion">Otros Titulos</p>
+            <div class="contenedor-principal-peliculas">
+                <div class="contenedor-peliculas">
+                    <ul class="lista-peliculas">
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/doctor-strange-in-the-multiverse-of-madness" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/doctorstrangeinthemultiverseofmadness_lob_crd_02_3.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Doctor Strange in the <br> of Madness<br>2022</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/spider-man-no-way-home" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/spider-mannowayhome_lob_crd_03.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Spider-Man: No Way Home<br>2021</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/shang-chi-and-the-legend-of-the-ten-rings" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/shangchi_lob_crd_07.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Shang-Chi and The Legend of <br>The Ten Rings<br>2021</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/black-widow" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/blackwidow_lob_crd_06.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Black Widow<br>2021</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/spider-man-far-from-home" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/spider-manfarfromhome_lob_crd_04_3.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Spider-Man: Far From Home<br>2019</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/captain-marvel" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/captainmarvel_lob_crd_06.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Captain Marvel<br>2019</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="contenedor-principal-peliculas">
+                <div class="contenedor-peliculas">
+                    <ul class="lista-peliculas">
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/black-panther" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/blackpanther_lob_crd_01_4.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Black Panther<br>2018</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/thor-ragnarok" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/thorragnarok_lob_crd_03.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Thor: Ragnarok<br>2017</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/captain-america-civil-war" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/captainamericacivilwar_lob_crd_01_9.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Captain America: Civil War<br>2016</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/doctor-strange" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/doctorstrange_lob_crd_01_6.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Doctor Strange<br>2016</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/guardians-of-the-galaxy-vol-2" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/guardiansofthegalaxyvol.2_lob_crd_01.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Guardian of The Galaxy vol.2<br>2017</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pelicula-content">
+                            <div class="pelicula">
+                                <a href="https://www.marvel.com/movies/captain-america-the-winter-soldier" style="text-decoration: none;">
+                                    <div class="img-pelicula">
+                                        <img src="assets/peliculas/captainamericathewintersoldier_lob_crd_01_1.jpg" alt="">
+                                    </div>
+                                    <div class="titulo-pelicula">
+                                        <p class="titulo-peliculas">Captain America: The Winter Soldier<br>2014</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-series">
+        <h1>BUSCA TU SERIE FAVORITA</h1>
+        <input type="text" id="serieInput" placeholder="Ingrese el nombre de una serie">
+        <button onclick="searchSerie()">Buscar</button>
+        <div id="moviesResults"></div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer bg-dark text-white expand-lg">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">MARVEL</h5>
+                    <p>Es una de las compañías de entretenimiento basada en personajes más destacadas del mundo. Marvel utiliza sus franquicias de personajes en entretenimiento, concesión de licencias y publicaciones.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-upppercase mb-4 font-weight-bold text-danger">Compañia</h5>
+                    <p>
+                        <a  href="https://www.marvel.com/corporate/about" class=" nav-link text-white" style="text-decoration: none;">Sobre la compañia</a>
+                    </p>
+                    <p>
+                        <a href="https://help.marvel.com/hc/en-us" class="text-white" style="text-decoration: none;">FAQS</a>
+                    </p>
+                    <p>
+                        <a href="https://help.marvel.com/hc/en-us" class="text-white" style="text-decoration: none;">Help</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Enlaces</h5>
+                    <p>
+                        <a href="https://www.disneyplus.com/brand/marvel?cid=DTCI-Synergy-Marvel-Site-Acquisition-Library-US-Marvel-NA-EN-NavFooter-Marvel_DisneyPlus_NavFooter_Evergreen-NA" class="text-white" style="text-decoration: none;">Disney+</a>
+                    </p>
+                    <p>
+                        <a href="https://www.marvel.com/redeem" class="text-white" style="text-decoration: none;">Comics</a>
+                    </p>
+                    <p>
+                        <a href="https://www.marvelhq.com/" class="text-white" style="text-decoration: none;">Marvelhq.com</a>
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Contacto</h5>
+                    <p>
+                        <i class="fas fa-home mr-3"></i> New York, NY 10104, US
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> Ms-comms@marvelstudios.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> 212-576-4000
+                    </p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>Copyright @2024 All rights reserved by:
+                        <a href="#" style="text-decoration: none;">
+                            <strong class="text-danger">MARVEL</strong>
+                        </a></p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/MarvelLatinoamerica/" class="btn-floating btn-sm text-white" style="font-size:23px;"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/Marvel" class="btn-floating btn-sm text-white" style="font-size:23px;"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/marvel/?hl=es" class="btn-floating btn-sm text-white" style="font-size:23px;"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/user/MARVEL" class="btn-floating btn-sm text-white" style="font-size:23px;"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.tiktok.com/@marvel?lang=es" class="btn-floating btn-sm text-white" style="font-size:23px;"><i class="fab fa-tiktok"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="js/scriptPeliculas.js"></script>
+</body>
+
+</html>

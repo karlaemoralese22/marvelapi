@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merch</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.18.0/js/md5.min.js"></script>
+    <link rel="stylesheet" href="css/stylesComics.css">
+</head>
+
+<body>
+    <!--Nav-->
+    <nav class="navbar bg-dark text-white navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-danger" href="index.html"><strong>MARVEL</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="peliculas.html">Peliculas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="personajes.html">Personajes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comics.html">Comics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="assets/avenger_animacion/avengers.html">Vengadores</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="container-comic">
+            <h1>BUSCAR COMICS</h1>
+            <input type="text" id="comicInput" placeholder="Ingrese el nombre del comic">
+            <button onclick="searchComic()">Buscar</button>
+            <div id="comicResults"></div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="footer bg-dark text-white expand-lg">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">MARVEL</h5>
+                    <p>Es una de las compañías de entretenimiento basada en personajes más destacadas
+                        del mundo. Marvel
+                        utiliza sus franquicias de personajes en entretenimiento, concesión de licencias
+                        y
+                        publicaciones.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-upppercase mb-4 font-weight-bold text-danger">Compañia</h5>
+                    <p>
+                        <a href="https://www.marvel.com/corporate/about" class=" nav-link text-white"
+                            style="text-decoration: none;">Sobre la compañia</a>
+                    </p>
+                    <p>
+                        <a href="https://help.marvel.com/hc/en-us" class="text-white"
+                            style="text-decoration: none;">FAQS</a>
+                    </p>
+                    <p>
+                        <a href="https://help.marvel.com/hc/en-us" class="text-white"
+                            style="text-decoration: none;">Help</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Enlaces</h5>
+                    <p>
+                        <a href="https://www.disneyplus.com/brand/marvel?cid=DTCI-Synergy-Marvel-Site-Acquisition-Library-US-Marvel-NA-EN-NavFooter-Marvel_DisneyPlus_NavFooter_Evergreen-NA"
+                            class="text-white" style="text-decoration: none;">Disney+</a>
+                    </p>
+                    <p>
+                        <a href="https://www.marvel.com/redeem" class="text-white"
+                            style="text-decoration: none;">Comics</a>
+                    </p>
+                    <p>
+                        <a href="https://www.marvelhq.com/" class="text-white"
+                            style="text-decoration: none;">Marvelhq.com</a>
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Contacto</h5>
+                    <p>
+                        <i class="fas fa-home mr-3"></i> New York, NY 10104, US
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> Ms-comms@marvelstudios.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> 212-576-4000
+                    </p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>Copyright @2024 All rights reserved by:
+                        <a href="#" style="text-decoration: none;">
+                            <strong class="text-danger">MARVEL</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/MarvelLatinoamerica/"
+                                    class="btn-floating btn-sm text-white" style="font-size:23px;"><i
+                                        class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/Marvel" class="btn-floating btn-sm text-white"
+                                    style="font-size:23px;"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/marvel/?hl=es" class="btn-floating btn-sm text-white"
+                                    style="font-size:23px;"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/user/MARVEL" class="btn-floating btn-sm text-white"
+                                    style="font-size:23px;"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.tiktok.com/@marvel?lang=es" class="btn-floating btn-sm text-white"
+                                    style="font-size:23px;"><i class="fab fa-tiktok"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="js/scriptComic.js"></script>
+
+</body>
+
+</html>

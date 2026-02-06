@@ -1,0 +1,148 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+body{
+  background-color: #E1E1E1;
+}
+
+.personajes {
+  width: 80%; 
+  margin: 50px auto 30px; 
+  text-align: center;
+}
+
+.personajes h1 {
+  margin-top: 20px; 
+}
+  
+.personajes-col img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Ajusta el borde redondeado de las imágenes */
+}
+
+.row {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+  
+.personajes-col {
+    flex-basis: 22%;
+    margin-bottom: 50px; 
+    margin-right: 15px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px; /* Agrega un relleno al contenedor */
+}
+  
+.layer-container {
+    position: relative;
+}
+  
+.layer {
+  background: transparent;
+  height: calc(100% - 10px); /* Ajusta la altura para considerar el relleno */
+  width: calc(100% - 10px); /* Ajusta el ancho para considerar el relleno */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  border-radius: 10px;
+  border-radius: 10px; /* Asegura que el layer tenga bordes redondeados */
+  box-sizing: border-box; /* Incluye el padding en el tamaño total */
+  padding: 10px; /* Espaciado alrededor del layer */
+}
+  
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 1.4rem;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;   
+}
+  
+.personajes-col:hover .layer {
+    background: rgba(226, 0, 0, 0.7);
+}
+  
+.personajes-col:hover .layer h3 {
+    opacity: 1;
+}
+    
+.layer:hover{
+background: rgba(226, 0,0,0.7);
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.container-personajes {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+input{
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button{
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+}
+
+#characterResults {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; 
+}
+
+.character {
+  flex: 0 0 calc(5% - 10px); 
+  margin: 10px;
+  text-align: center;
+}
+
+.character img {
+  max-width: 200px; 
+  border-radius: 10px;
+  margin-right: 20px; 
+}
+
+.character h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.character p {
+  margin-bottom: 0;
+  text-align: center;
+}
