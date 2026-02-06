@@ -54,8 +54,6 @@ Este proyecto utiliza la API oficial de Marvel. Para usar el proyecto:
    - `js/scriptComic.js`
    - `js/scriptPeliculas.js`
 
-**⚠️ IMPORTANTE**: No subas tus claves privadas a repositorios públicos. Considera usar variables de entorno o un archivo de configuración que esté en `.gitignore`.
-
 ## 🚀 Uso
 
 1. Clona el repositorio:
@@ -124,6 +122,14 @@ Este proyecto es solo para fines educativos. Marvel y todos los personajes relac
 ## 👤 Autor
 
 Proyecto desarrollado como parte del curso de desarrollo web.
+
+## ⚠️ Nota sobre la disponibilidad de la API
+
+Este proyecto fue desarrollado como una demostración técnica de integración con APIs REST, manejo de autenticación y procesamiento de respuestas en formato JSON utilizando la API pública de Marvel.
+
+Al momento de desarrollar este proyecto, los endpoints utilizados se encontraban disponibles públicamente. Sin embargo, debido a cambios posteriores realizados por el proveedor (Marvel / Disney), la API original dejó de estar disponible o funcional.
+
+Por esta razón, las llamadas a la API incluidas en este proyecto pueden no ejecutarse correctamente en la actualidad.
 
 ## 🙏 Agradecimientos
 
